@@ -1,0 +1,15 @@
+---
+- name: Installation des serveurs Web
+  hosts: web
+  remote_user: root
+  
+  roles:
+  - utils
+        
+  
+- name: Installation des serveurs GIT
+  hosts: git-server
+  remote_user: root
+  roles:
+  - utils
+  - git-server

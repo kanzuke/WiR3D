@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+a {
+  color: -moz-nativehyperlinktext;
+  text-decoration: none;
+}
+
+@font-face {
+	font-family: "LoveLetter";
+	src: url('../fonts/loveletter.ttf');
+}
+
+
+
+section {
+    margin-top: 20px;
+}
+
+
+
+
+#home {
+	background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: center;
+    height: 70px;
+    padding-top: 80px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+#home:hover {
+	background-image: url("../img/home-hover.png");
+}
+
+
+#gallery {
+	background-image: url("../img/gallery.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: center;
+    height: 70px;
+    padding-top: 80px;
+    margin-bottom: 5px;
+    width: 110px;
+}
+
+#gallery:hover {
+	background-image: url("../img/gallery-hover.png");
+}
+
+#owncloud {
+	background-image: url("../img/cloud.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: center;
+    height: 70px;
+    padding-top: 80px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+#owncloud:hover {
+	background-image: url("../img/cloud-hover.png");
+}
+
+#mail {
+    background-image: url("../img/mail.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: center;
+    height: 70px;
+    padding-top: 80px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+#mail:hover {
+    background-image: url("../img/mail-hover.png");
+}
+
+
+#library {
+    background-image: url("../img/library.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: center;
+    height: 70px;
+    padding-top: 80px;
+    margin-bottom: 5px;
+    width: 140px;
+}
+
+#library:hover {
+    background-image: url("../img/library-hover.png");
+}
+
+
+
+/******************************* NAVBAR **************************************/
+
+.navbar-custom {
+    background: #2C3E50;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    height: 100px;
+}
+.navbar-custom .navbar-brand {
+    color: white;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
+}
+.navbar-custom .navbar-nav {
+  letter-spacing: 1px;
+}
+
+.navbar-custom .navbar-nav li.logo {
+    font-family: "LoveLetter";
+    text-transform: none;
+    color: white;
+    font-size: 80px;
+}
+.navbar-custom .navbar-nav li a {
+  color: white;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #788E99;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: white;
+  background: #788E99;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: white;
+  background: #788E99;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-color: white;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #788E99;
+  color: white;
+  border-color: #788E99;
+}
+
+
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+
+
+
+/********************************* HEADER ***************************************/
+header {
+  text-align: center;
+  background: #788E99;
+  color: white;
+}
+header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header img {
+  display: block;
+  margin: 0 auto 20px;
+}
+header .intro-text .name {
+  display: block;
+  font-family: "LoveLetter","Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+header .intro-text .skills {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+}
+
+
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2C3E50;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px;
+  z-index: 1049;
+}
+.scroll-top .btn {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  line-height: 28px;
+}
+
+
+
+
+
+.stylish-panel {
+    padding: 20px 0;
+    text-align: center;
+}
+.stylish-panel > div > div{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.stylish-panel > div:hover > div{
+    margin-top: -10px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+
+.stylish-panel > div:hover img {
+    border-radius: 50%;
+}
+
+.stylish-panel h2 {
+    color: #333333;
+}
+
+.stylish-panel a:hover {
+    text-decoration: none;
+}
+
+
+/********************************* STAR LIGHT ***************************************/
+hr.star-light,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+hr.star-light {
+  border-color: white;
+}
+hr.star-light:after {
+  background-color: #788E99;
+  color: white;
+}
+hr.star-primary {
+  border-color: #2C3E50;
+}
+hr.star-primary:after {
+  background-color: white;
+  color: #2C3E50;
+}
+
+
+
+
+/********************************* LIBRARY ***************************************/
+.movie-panel > div > div{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.movie-panel > div > div > img.img-thumbnail{
+    max-height: 300px;
+}

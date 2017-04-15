@@ -1,0 +1,8 @@
+---
+- name: Installation des logiciels utilitaires
+  yum: name={{ item }}  update_cache=yes state=latest
+  with_items: 
+      - vim
+      - htop
+      - wget
+      - tcpdump
